@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.talk_to_your_phone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        
+        <receiver android:name="com.talk_to_your_phone.notifications.ScreenReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.project.talk_to_your_phone.SplashActivity"
+            android:screenOrientation="portrait" >
+           
+        </activity>
+        <activity
+            android:name="com.project.talk_to_your_phone.Main"
+            android:screenOrientation="portrait" 
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.HOME" />
+            <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>>            
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.notifications.Batterie_notif"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.notifications.SMS_notif"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.notifications.Appels_notif"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.talk_to_your_phone.notifications.Appels_out_notif"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.project.talk_to_your_phone.Urgence"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.clavier.Clavier"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.clavier.Menu_choix"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.outils.Brailler"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.outils.Clavier"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.messagerie.Messagerie"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.messagerie.Boite_reception"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.messagerie.NV_message"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.messagerie.Dicter_SMS"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.messagerie.Choix_Destinataire"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.messagerie.Choix_Contact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.contacts.Contacts_Main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.contacts.Contacts"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.contacts.Favoris"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.contacts.Menu_Choix_Contact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.contacts.Modifier_Contact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.journal.Journal_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.journal.Appels_abscences"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.journal.Appels_recus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.journal.Appels_emis"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.journal.Effacer_journal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.journal.Menu_choix_journal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.islam.Islam_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.islam.Heures_Prieres"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.islam.Boussole"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.talk_to_your_phone.horloge.Horloge_Main"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.talk_to_your_phone.horloge.Equivalent_date"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.talk_to_your_phone.horloge.Reveil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.horloge.Time_Picker_HH"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.talk_to_your_phone.horloge.Time_Picker_MN"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.horloge.Alarme_notif"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.talk_to_your_phone.parametres.Parametres_Main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.parametres.Mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.parametres.Etat_Batterie"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.aide.Menu_Demo1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.talk_to_your_phone.aide.Menu_Demo2"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <receiver
+            android:name="com.talk_to_your_phone.horloge.AlarmReceiver"
+            android:process=":remote" />
+           
+        <receiver android:name="com.talk_to_your_phone.horloge.AlarmBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name="com.talk_to_your_phone.notifications.SMSReceiver" >
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.talk_to_your_phone.notifications.AppelReceiver">
+            <intent-filter android:priority="999">
+            <action android:name="android.intent.action.PHONE_STATE"></action>
+            </intent-filter>
+        </receiver>
+        
+         
+      
+    </application>
+
+</manifest>

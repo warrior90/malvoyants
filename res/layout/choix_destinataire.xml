@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal|fill_vertical|center_horizontal"
+    android:background="@drawable/wallpaper_talk"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:weightSum="3" >
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_choix_contact"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boutons"
+            android:text="Choisir un contact"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <Button
+            android:id="@+id/btn_num_dest"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boutons"
+            android:text="Taper le numéro"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+       
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/btn_quitter"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boutons"
+            android:text="Quitter"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+        
+    </TableRow>
+
+
+</TableLayout>

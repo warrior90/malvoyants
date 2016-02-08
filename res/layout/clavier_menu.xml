@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal|fill_vertical|center_horizontal"
+    android:background="@drawable/wallpaper_talk"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:shrinkColumns="0,1,2"
+    android:stretchColumns="0,1,2"
+    android:weightSum="3" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Num : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <Button
+            android:id="@+id/button_ajouter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boutons"
+            android:text="Ajouter"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <Button
+            android:id="@+id/button_retour"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boutons"
+            android:text="Retour"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,108 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wallpaper7"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/clavier"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/clavier" />
+
+        <ImageView
+            android:id="@+id/journal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/journal" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/contacts"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/contact" />
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/sms3" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/islam"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/islam3" />
+
+        <ImageView
+            android:id="@+id/horloge"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/horloge" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/params"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/params2" />
+
+        <ImageView
+            android:id="@+id/aide"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/aide" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_urgence"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bouton_urg"
+            android:text="Urgence"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:typeface="normal" />
+
+    </TableRow>
+
+</TableLayout>
